@@ -9,11 +9,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Apply page transition
-    const main = document.querySelector('main');
-    if (main) {
-        main.classList.add('page-transition');
-    }
-
     // Dropdown handling (hover is CSS, but we can add click-outside for safety if needed)
 });

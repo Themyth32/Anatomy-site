@@ -8,109 +8,32 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo-placeholder">[ LOGO HERE ]</a>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <a href="#">Body Systems ▾</a>
-                <div class="dropdown-menu">
-                    <a href="systems/skeletal.html">Skeletal</a>
-                    <a href="systems/muscular.html">Muscular</a>
-                    <a href="systems/nervous.html">Nervous</a>
-                    <a href="systems/circulatory.html">Circulatory</a>
-                    <a href="systems/respiratory.html">Respiratory</a>
-                    <a href="systems/digestive.html">Digestive</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">Quiz ▾</a>
-                <div class="dropdown-menu">
-                    <a href="quiz/skeletal-quiz.html">Skeletal Quiz</a>
-                    <a href="quiz/muscular-quiz.html">Muscular Quiz</a>
-                    <a href="quiz/nervous-quiz.html">Nervous Quiz</a>
-                    <a href="quiz/circulatory-quiz.html">Circulatory Quiz</a>
-                    <a href="quiz/respiratory-quiz.html">Respiratory Quiz</a>
-                    <a href="quiz/digestive-quiz.html">Digestive Quiz</a>
-                </div>
-            </div>
-            <a href="about.html" class="active">About</a>
-            <a href="#sources">Sources</a>
-        </div>
-    </nav>
+    <script src="js/components.js"></script>
+    <script>injectNav('about');</script>
 
-    <main class="page-transition" style="max-width: 800px; margin: 0 auto; padding: 60px;">
-        <h1 style="font-size: 48px; margin-bottom: 40px; text-align: center;">About the Project</h1>
+    <main class="page-transition about-main">
+        <h1 class="about-title">About the Project</h1>
 
-        <section style="margin-bottom: 40px;">
+        <section class="about-section">
             <h2 style="font-size: 24px; margin-bottom: 15px;">Project Description</h2>
             <!-- PLACEHOLDER: Project Description -->
             <div class="placeholder-text">[ PLACEHOLDER: Add a description of this project and its purpose ]</div>
         </section>
 
-        <section style="margin-bottom: 40px;">
+        <section class="about-section">
             <h2 style="font-size: 24px; margin-bottom: 15px;">Educational Purpose</h2>
             <!-- PLACEHOLDER: Educational Purpose -->
             <div class="placeholder-text">[ PLACEHOLDER: Describe the educational goals and intended audience ]</div>
         </section>
 
-        <section>
+        <section class="about-section">
             <h2 style="font-size: 24px; margin-bottom: 15px;">Credits</h2>
             <!-- PLACEHOLDER: Credits -->
             <div class="placeholder-text">[ PLACEHOLDER: Add names, roles, or credits for creators of this site ]</div>
         </section>
     </main>
 
-    <footer id="sources">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <div class="footer-logo">[ LOGO HERE ]</div>
-                <p style="font-weight: 700; color: white; margin-bottom: 5px;">Human Anatomy Explorer</p>
-                <p class="placeholder-text" style="font-size: 12px;">[ PLACEHOLDER: Tagline ]</p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#sources">Sources</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Systems</h4>
-                <ul>
-                    <li><a href="systems/skeletal.html">Skeletal</a></li>
-                    <li><a href="systems/muscular.html">Muscular</a></li>
-                    <li><a href="systems/nervous.html">Nervous</a></li>
-                    <li><a href="systems/circulatory.html">Circulatory</a></li>
-                    <li><a href="systems/respiratory.html">Respiratory</a></li>
-                    <li><a href="systems/digestive.html">Digestive</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Quiz</h4>
-                <ul>
-                    <li><a href="quiz/skeletal-quiz.html">Skeletal Quiz</a></li>
-                    <li><a href="quiz/muscular-quiz.html">Muscular Quiz</a></li>
-                    <li><a href="quiz/nervous-quiz.html">Nervous Quiz</a></li>
-                    <li><a href="quiz/circulatory-quiz.html">Circulatory Quiz</a></li>
-                    <li><a href="quiz/respiratory-quiz.html">Respiratory Quiz</a></li>
-                    <li><a href="quiz/digestive-quiz.html">Digestive Quiz</a></li>
-                </ul>
-            </div>
-        </div>
-        <div style="margin-top: 40px;">
-            <h4 style="font-size: 12px; color: #C0392B; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px;">Sources</h4>
-            <div class="placeholder-text" style="margin-bottom: 10px;">[ PLACEHOLDER: Source 1 — e.g. Textbook name, Author, Year ]</div>
-            <div class="placeholder-text" style="margin-bottom: 10px;">[ PLACEHOLDER: Source 2 — e.g. Website URL ]</div>
-            <div class="placeholder-text">[ PLACEHOLDER: Source 3 ]</div>
-        </div>
-        <div class="footer-bottom">
-            <p>Contact Us: <span class="placeholder-text" style="padding: 2px 6px;">[ PLACEHOLDER: email or contact form link ]</span></p>
-            <p style="margin-top: 10px;">© 2025 Human Anatomy Explorer — For educational purposes only</p>
-        </div>
-    </footer>
-
+    <script>injectFooter();</script>
     <script src="js/main.js"></script>
 </body>
 </html>

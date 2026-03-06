@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         closeSidebarBtn.addEventListener('click', () => {
             sidebar.classList.remove('open');
             diagramPlaceholder.style.transform = 'scale(1)';
-            diagramWrapper.style.width = 'calc(100% - 120px)'; // Account for margins
+            diagramWrapper.style.width = '';
             hotspots.forEach(h => h.classList.remove('active'));
         });
     }
