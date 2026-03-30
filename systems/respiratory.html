@@ -6,6 +6,15 @@
     <title>Human Anatomy Explorer | Respiratory System</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .system-description {
+          font-family: 'Inter', sans-serif;
+          font-size: 16px;
+          color: #555555;
+          line-height: 1.7;
+          margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <script src="../js/components.js"></script>
@@ -13,20 +22,37 @@
 
     <main class="page-transition">
         <header class="system-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Home</a> > Body Systems > Respiratory System
-            </div>
             <h1>Respiratory System</h1>
-            <div class="placeholder-text">[ PLACEHOLDER: Add a 2–3 sentence overview of the Respiratory System here ]</div>
+            <div class="system-description">
+              The respiratory system is how your body gets oxygen from the air into your blood, and pushes waste carbon dioxide back out. Every time you breathe, this system is working — even while you sleep. It works closely with the circulatory system, which carries the oxygen your lungs collect to the rest of your body.
+            </div>
         </header>
 
         <section class="system-container">
             <div class="diagram-wrapper">
                 <div class="diagram-placeholder">
                     [ PLACEHOLDER: Insert Respiratory System anatomical diagram here ]
-                    <button class="hotspot" data-organ="Lungs" style="top: 40%; left: 50%;"><span class="hotspot-label">Lungs</span></button>
-                    <button class="hotspot" data-organ="Trachea" style="top: 20%; left: 50%;"><span class="hotspot-label">Trachea</span></button>
-                    <button class="hotspot" data-organ="Diaphragm" style="top: 60%; left: 50%;"><span class="hotspot-label">Diaphragm</span></button>
+                    <button class="hotspot" data-organ="Nose and Nasal Cavity" style="top: 8%; left: 50%;">
+                      <span class="hotspot-label">Nose and Nasal Cavity</span>
+                    </button>
+                    <button class="hotspot" data-organ="Pharynx" style="top: 16%; left: 52%;">
+                      <span class="hotspot-label">Pharynx</span>
+                    </button>
+                    <button class="hotspot" data-organ="Larynx" style="top: 23%; left: 50%;">
+                      <span class="hotspot-label">Larynx</span>
+                    </button>
+                    <button class="hotspot" data-organ="Trachea" style="top: 30%; left: 50%;">
+                      <span class="hotspot-label">Trachea</span>
+                    </button>
+                    <button class="hotspot" data-organ="Lungs" style="top: 40%; left: 50%;">
+                      <span class="hotspot-label">Lungs</span>
+                    </button>
+                    <button class="hotspot" data-organ="Bronchi" style="top: 45%; left: 44%;">
+                      <span class="hotspot-label">Bronchi</span>
+                    </button>
+                    <button class="hotspot" data-organ="Diaphragm" style="top: 55%; left: 50%;">
+                      <span class="hotspot-label">Diaphragm</span>
+                    </button>
                 </div>
             </div>
 
@@ -35,18 +61,17 @@
                     <button class="close-sidebar">✕</button>
                     <h2>Organ Name</h2>
                     <hr style="border: none; border-top: 2px solid #C0392B; margin: 12px 0 20px;">
-                    <div class="info-section"><div class="label">📍 Location</div><div class="content">[ PLACEHOLDER ]</div></div>
-                    <div class="info-section"><div class="label">⚙️ Function</div><div class="content">[ PLACEHOLDER ]</div></div>
-                    <div class="info-section"><div class="label">📝 Description</div><div class="content">[ PLACEHOLDER ]</div></div>
-                    <div class="info-section"><div class="label">✨ Fun Fact</div><div class="content">[ PLACEHOLDER ]</div></div>
-                    <div class="info-section"><div class="label">❓ Quiz Question</div><div class="content">[ PLACEHOLDER ]</div></div>
+                    <div class="info-section"><div class="label">Location</div><div class="content">[ PLACEHOLDER ]</div></div>
+                    <div class="info-section"><div class="label">Function</div><div class="content">[ PLACEHOLDER ]</div></div>
+                    <div class="info-section"><div class="label">Description</div><div class="content">[ PLACEHOLDER ]</div></div>
+                    <div class="info-section"><div class="label">Common Ailments</div><div class="content" id="sidebar-ailments">—</div></div>
                 </div>
             </aside>
         </section>
 
         <section class="did-you-know">
-            <h3>💡 Did You Know?</h3>
-            <p>[ PLACEHOLDER: Add a surprising fact about the Respiratory System here ]</p>
+            <h3>Did You Know?</h3>
+            <p id="did-you-know-text"></p>
         </section>
     </main>
 
